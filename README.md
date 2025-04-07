@@ -1,40 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# user-crud-client
 
-## Getting Started
+Este é o repositório do cliente Front-end para uma aplicação de CRUD de usuários.
 
-First, run the development server:
+## Pré-requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **NestJs** instalado em sua máquina (versão recomendada para Next.js 15).
+- **npm** instalado em sua máquina.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Passo a Passo para Execução
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1.  **Instalar as Dependências**
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    Navegue até a pasta raiz do projeto (`user-crud-client`) e execute um dos seguintes comandos para instalar todas as dependências necessárias:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+    **Com npm:**
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    npm install
+    ```
 
-## Learn More
+2.  **Configurar as Variáveis de Ambiente**
 
-To learn more about Next.js, take a look at the following resources:
+    Na raiz do projeto, crie um arquivo chamado `.env`. Dentro deste arquivo, você precisará definir as variáveis de ambiente necessárias para a aplicação.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+    **Exemplo encontrado no arquivo `.env.sample`:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Iniciar a Aplicação de Desenvolvimento**
 
-## Deploy on Vercel
+    Após instalar as dependências e configurar o arquivo `.env.local`, você pode iniciar o servidor de desenvolvimento do Next.js com o seguinte comando:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+    ```
+
+    Este comando inicia o servidor de desenvolvimento e geralmente abre a aplicação em seu navegador padrão (normalmente em `http://localhost:3000`).
+
+## Usuário Padrão para Testes
+
+Para facilitar o uso e testes iniciais da aplicação, um usuário padrão já foi criado no backend (assumindo que o backend esteja configurado com este usuário). Você pode utilizar as seguintes credenciais para acessar a aplicação inicialmente:
+
+- **Nome de Usuário:** `admin@email.com`
+- **Senha:** `admin`

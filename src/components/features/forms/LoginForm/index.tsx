@@ -16,7 +16,7 @@ const LoginForm = () => {
   } = useForm<ILoginFormValues>({
     mode: "onBlur",
     reValidateMode: "onBlur",
-    defaultValues: { email: "", password: "" },
+    defaultValues: { email: "admin@email.com", password: "admin" },
   });
 
   const { mutate: login, isPending } = useLogin();
