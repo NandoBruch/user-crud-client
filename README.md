@@ -4,6 +4,7 @@ Este é o repositório do cliente Front-end para uma aplicação de CRUD de usu�
 
 ## Pré-requisitos
 
+- **Node** >= v22.x
 - **NestJs** instalado em sua máquina (versão recomendada para Next.js 15).
 - **npm** instalado em sua máquina.
 
